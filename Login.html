@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link href="project1.css" rel="stylesheet"/>
+    <link rel="icon" href="http://www.michael-weinstein.com/wp-content/uploads/2016/10/nba_logo_redesigns-la_lakers-full.png" sizes="16x16">
+
+	<script type="text/javascript">
+		function Submit(){
+			var myText="your username is " + myForm.username.value + ". Your zip code is " + myForm.zipCode.value + ". And your password is " + myForm.psswrd.value + ". Thank you for completing this login, now u may view this page about the Lakers. Enjoy!";
+			
+			window.alert(myText)
+			window.open("P2homepage.html")
+		}
+	</script>
+</head>
+<body>
+	<h1>Login Form</h1>
+	<form name="myForm">
+		Username:<br>
+		<input type="text" name="username"><br>
+		<br>
+		Zip Code:<br>
+		<input type="number" name="zipCode"><br>
+		<br>
+		Password:<br>
+		<input type="password" name="psswrd"><br>
+		<br>
+		<input type="button" name="btSubmit" value="Login" onClick="Submit();">
+	</form>
+</body>
+</html>
