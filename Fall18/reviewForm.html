@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My frist form website page</title>
+		<link href="project1.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" href="http://www.michael-weinstein.com/wp-content/uploads/2016/10/nba_logo_redesigns-la_lakers-full.png" sizes="16x16">
+		<script>
+		function submitMail(){
+	var bodyText;
+		
+		bodyText = "mailto:aiden.dudley@hgs.hiddengeniusproject.org?subject=Review Form&body=";
+		bodyText = bodyText + "You received a review from: " + ReviewForm.name.value + ". He/She is from: " + ReviewForm.place.value + "and their email is: " + ReviewForm.email.value + "." + "The users comment was: " + ReviewForm.taExp.value + ". Thank you for submitting this review form. Your information is a great help for me and my future in computer programming.";
+		window.open(bodyText);
+	}
+	</script>
+
+	</head>
+	<body>
+	<nav>
+      <ul>
+        <li class="navbarli"><a href="P2homepage.html">Homepage</a></li>
+        <li class="navbarli"><a href="P2summerleague.html">Summer League Success</a></li>
+        <li class="navbarli"><a href="P2allstars.html">Young Talent in LA</a></li>
+        <li class="navbarli"><a href="P2lebron.html">Theres a New King of Cali</a></li>
+        <li class="navbarli"><a href="P2roster.html">Los Angeles Roster</a></li>
+        <li class="navbarli"><a href="reviewForm.html">Review Form</a></li>
+        <li class="navbarli"><a href="FGPercentage.html">Field Goal Percentage Calculator</a></li>
+      </ul>
+    </nav>
+			<form name="ReviewForm">
+				What's your name?<br>
+				<input type="text" name="name"><br>
+				<br>
+				What's your email?<br>
+				<input type="text" name="email"><br>
+				<br>
+				Where are you from? Please specify City, State, and Country<br>
+				<input type="text" name="place"><br>
+				<br>
+				Please tell me how u liked or didn't like the webiste. All of your feedback is helpful!!<br>
+				<TEXTAREA name="taExp" rows="5" cols="40" placeholder="Enter your comment here..."></TEXTAREA> <br>
+				<br>
+				<input type="button" name="Submit" value="Send Review" onclick="submitMail();">
+  			</form>
+	</body>
+</html>

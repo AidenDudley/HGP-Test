@@ -1,0 +1,70 @@
+.koo{
+width:627px;
+height:500px;
+float: right;
+}
+.navbarli{
+  display: inline-block;
+  padding: 10px;
+  background-color: purple;
+  border: 2px solid white;
+  font-family: arial, sans-serif;
+  font-size: 22px;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+body{
+  background-color: Goldenrod;
+  text-align: center;
+}
+p{
+  background-color: purple;
+  color: white;
+}
+.p2homepageparagraph {
+    border: 2px solid Goldenrod;
+    background-color: purple;
+    width: 600px;
+}
+.homepagemininews{
+    text-align: left;
+    margin-left: 2px;
+    float: left;
+}
+.homepageheader{
+  font-size: 20px;
+  margin-left: 2px;
+  text-align: left;
+  background-color: purple;
+  color: white;
+}
+.floatleftpic{
+  float: left;
+    width: 323px;
+    height: 188px;
+}
+.floatrightpic{
+  float: right;
+  width: 323px;
+  height: 188px;
+}
+.summerleagueandallstartsandbronmain{
+  margin-left: 325px;
+  margin-right: 325px;
+}
+.joo{
+  width: 700px;
+  height: 600px;
+  text-align: center;
+}
+.rostercenter{
+  text-align: center;
+  border: 5px solid purple;
+  padding: 10px;;
+  color: white;
+  background-color: purple;
+  width: 355px;
+}

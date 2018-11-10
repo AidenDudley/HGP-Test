@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="project1.css" type="text/css" rel="stylesheet" />
+      <link rel="icon" href="http://www.michael-weinstein.com/wp-content/uploads/2016/10/nba_logo_redesigns-la_lakers-full.png" sizes="16x16">
+	<title>Calculating field goal average</title>
+	<script type="text/javascript">
+		function Submit(){
+			var fieldGoalAvg = 0 ;
+			var fieldGoalsAttepmted = 0 ;
+			var fieldGoalsMade = 0 ;
+			fieldGoalsAttepmted = Number(myForm.fieldGoalsAttepmted.value);
+			fieldGoalsMade = Number(myForm.fieldGoalsMade.value);
+			fieldGoalAvg = Number(fieldGoalsMade)/Number(fieldGoalsAttepmted);
+			myForm.fieldGoalAvg.value = fieldGoalAvg.toFixed(3) * 100;
+		}
+	</script>
+</head>
+<body>
+<nav>
+      <ul>
+        <li class="navbarli"><a href="P2homepage.html">Homepage</a></li>
+        <li class="navbarli"><a href="P2summerleague.html">Summer League Success</a></li>
+        <li class="navbarli"><a href="P2allstars.html">Young Talent in LA</a></li>
+        <li class="navbarli"><a href="P2lebron.html">Theres a New King of Cali</a></li>
+        <li class="navbarli"><a href="P2roster.html">Los Angeles Roster</a></li>
+        <li class="navbarli"><a href="reviewForm.html">Review Form</a></li>
+        <li class="navbarli"><a href="FGPercentage.html">Field Goal Percentage Calculator</a></li>
+          
+      </ul>
+    </nav>
+	<h1>Calculating a field goal average in basketball</h1>
+	<form name="myForm">
+		How many games did you play this season?
+		<input type="number" name="gamesPlayed"><br>
+		<hr>
+		How many shots did you shoot?
+		<input type="number" name="fieldGoalsAttepmted"><br>
+		<hr>
+		How many shots did you make?
+		<input type="number" name="fieldGoalsMade">
+		<hr>
+		<input type="button" name="btSubmit" value="Calculate Field Goal Percentage" onClick="Submit();"><br>
+		<hr>
+		Your field goal average:
+		<input type="number" name="fieldGoalAvg">
+	</form>
+</body>
+</html>
+
